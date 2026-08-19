@@ -1236,8 +1236,8 @@ footer {
    Supabase → Project Settings → Data API / API Keys
    Si los dejas vacíos, la app funciona en modo local (localStorage).
    ══════════════════════════════════════════════════════════════ */
-const SUPABASE_URL      = 'https://goynkbnbvuepuoefgzam.supabase.co/rest/v1/';   // ej: https://abcdefghijk.supabase.co
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdveW5rYm5idnVlcHVvZWZnemFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcwOTE4NjgsImV4cCI6MjEwMjY2Nzg2OH0.YgA9Ao1d4ifHyhy9f4BvUeur-P4OQNJqGoAu6_L_omU';   // clave pública anon (publishable)
+const SUPABASE_URL      = 'https://goynkbnbvuepuoefgzam.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdveW5rYm5idnVlcHVvZWZnemFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcwOTE4NjgsImV4cCI6MjEwMjY2Nzg2OH0.YgA9Ao1d4ifHyhy9f4BvUeur-P4OQNJqGoAu6_L_omU';
 
 const db = (SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase)
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
